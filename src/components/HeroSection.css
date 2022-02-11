@@ -1,0 +1,159 @@
+.home .max-width {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background:-moz-linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(21, 68, 157, 1) 25%, rgba(130, 47, 133, 1) 100%); 
+    background:-webkit-linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(21, 68, 157, 1) 25%, rgba(130, 47, 133, 1) 100%);
+    background:-o-linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(21, 68, 157, 1) 25%, rgba(130, 47, 133, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#822F85', endColorstr='#0000FF', GradientType=0 );
+    background:-ms-linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(21, 68, 157, 1) 25%, rgba(130, 47, 133, 1) 100%);
+    background:linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(21, 68, 157, 1) 25%, rgba(130, 47, 133, 1) 100%);
+}
+.home .max-width .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* transform: translate(50px,100px); */
+}
+.home .max-width .left div{
+    color: #fff;
+    /* line-height: 100px; */
+}
+.max-width .left .text-1 {
+    font-size: 30px;
+}
+.max-width .left .text-2 {
+    font-size: 70px;
+    font-weight: 500;
+
+}
+.max-width .left .text-3 {
+    font-size: 40px;
+}
+.max-width .left .text-3 span {
+    color: crimson;
+    font-weight: 500;
+    font-size: 40px;
+}
+.max-width .left .text-3 span:before {
+    content: "";
+    animation: animate infinite 3s;
+}
+@keyframes animate {
+    0% {
+        content: "Designer";
+    }
+    50%{
+        content: "Developer";
+    }
+    100% {
+        content: "Freelancer";
+    }
+}
+.max-width .left .btn-0 a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 1px solid crimson;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.max-width .left .btn-0 a:hover{
+    color: crimson;
+    background: none;
+}
+.max-width .right{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.max-width .right img {
+    height: 500px;
+    width: 500px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    /* transform: translate(-50px, 70px); */
+}
+
+/* Responsuive Herosection start here */
+
+@media screen and (max-width: 960px) {
+    .max-width .left .text-1 {
+        font-size: 25px;
+    }
+    .max-width .left .text-2 {
+        font-size: 55px;
+    
+    }
+    .max-width .left .text-3 {
+        font-size: 30px;
+    }
+    .max-width .left .text-3 span {
+        font-size: 32px;
+    }
+    .max-width .right img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home .max-width {
+        display: flex;
+        flex-direction: column;
+    }
+    .home .max-width .left {
+        width: 100%;
+        
+    }
+    .max-width .right {
+        width: 100%;
+    }
+    .max-width .right img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .max-width .left .text-1 {
+        font-size: 20px;
+    }
+    .max-width .left .text-2 {
+        font-size: 40px;
+    }
+    .max-width .left .text-3 {
+        font-size: 23px;
+    }
+    .max-width .left .text-3 span {
+        font-size: 25px;
+    }
+    .home .max-width .left div{
+        line-height: 40px;
+    }
+    .max-width .left .btn-0 a {
+        display: inline-block;
+        background: crimson;
+        color: #fff;
+        font-size: 25px;
+        padding: 10px 30px;
+        margin-top: 17px;
+    }
+      
+}

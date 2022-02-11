@@ -1,0 +1,34 @@
+.card-container {
+    border: 1px solid #1E90FF;
+    height: auto;
+    max-width: 270px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+}
+.card-image img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+.tech-stack p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn-to {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-to a {
+    padding: 8px 20px;
+    background-color: #1E90FF;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}

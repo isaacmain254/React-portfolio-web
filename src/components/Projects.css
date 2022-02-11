@@ -1,0 +1,32 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    margin-bottom: 27px;
+    border: 1px solid #1E90FF;
+}
+.projects h1 {
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 0;
+    margin-top: 0;
+    color: #1E90FF;
+}
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+@media screen and (max-width:650px) {
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .projects h1 {
+        font-size: 30px;
+    }
+}
